@@ -115,6 +115,7 @@ class CommentsController < ApplicationController
     end
 
     comment.comment = params[:comment]
+    comment.is_learning_summary = params[:is_learning_summary]
 
     if comment.save
       # TODO: render the comment again properly, it's indented wrong
